@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Gamoya.Weather.ForecastIO</id>
+    <version>0.2.0</version>
+    <title>Gamoya.Weather.ForecastIO</title>
+    <authors>Gamoya</authors>
+    <owners>Gamoya</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>http://www.gamoya.de/Project/Weather</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ForecastIO Weather API</description>
+    <releaseNotes />
+    <copyright>Copyright Gamoya 2013</copyright>
+    <language>en-US</language>
+    <tags>Weather</tags>
+    <dependencies>
+      <dependency id="Gamoya.Weather.Common" version="0.2.0" />
+      <dependency id="Newtonsoft.Json" version="5.0.5" />
+      <dependency id="RestSharp" version="104.1" />
+    </dependencies>
+    <references>
+      <reference file="Gamoya.Weather.ForecastIO.dll" />
+    </references>
+  </metadata>
+</package>
