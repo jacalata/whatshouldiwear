@@ -2,7 +2,7 @@
     <section class="featured">
         <div class="content-wrapper">
             <hgroup class="title">
-                <h1>Welcome to What Should I Wear!</h1>
+                <h1>Welcome to your new wardrobe manager!</h1>
             </hgroup>
             <p>
                 We check today's weather for you and recommend an outfit based on your uploaded wardrobe items.
@@ -19,19 +19,19 @@
 
             <li class="two">
                 <h5>Ask us to choose an outfit!</h5>    
-                <button onclick="getOutfit">Get suggestions</button>
+                <button onclick="getOutfit()">Get suggestions</button>
                 <div id="outfit-viewer" style="border:solid">
                 </div>
             </li>
             <li class="three">
                 <h5>How's that look?</h5>
-                <button onclick="getOutfit">eh...try something else</button>
-                <button onclick="wearOutfit">This is perfect!</button>
+                <button onclick="getOutfit()">eh...try something else</button>
+                <button onclick="wearOutfit()">This is perfect!</button>
             </li>
         </ol>
     </section>
 </div>
-
+@section Scripts {
 <script type="text/javascript">
     console.log('executing');
 
@@ -43,10 +43,14 @@
              cache: false,
              async: true,
              data: { data: 'hat' },
-             success: function (result) {
-                 $("outfit-viewer").html(result);
-             }
+             success: loadClothing
          });
+    }
+
+    function loadClothing(result) {
+        console.log("success get outfit");
+        $("#outfit-viewer").html(result);
+        console.log($("#outfit-viewer")[0]);
     }
 
     function wearOutfit(){
@@ -63,3 +67,4 @@
     }
 
 </script>
+    }

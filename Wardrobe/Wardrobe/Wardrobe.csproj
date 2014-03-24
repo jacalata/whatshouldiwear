@@ -176,6 +176,7 @@
     </Compile>
     <Compile Include="Models\ClothingItem.cs" />
     <Compile Include="Models\ClothingType.cs" />
+    <Compile Include="Models\Outfit.cs" />
     <Compile Include="Models\Tag.cs" />
     <Compile Include="Models\Temperature.cs" />
     <Compile Include="Models\WardRobe.cs" />
@@ -298,6 +299,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\ItemView.cshtml" />
+    <Content Include="Views\Home\OutfitView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -19,9 +19,9 @@ namespace Wardrobe.Controllers
             var item = wardrobe.Get(1);
             if (item.Picture == null)
             {
-                item.Picture = new Uri("http://en.wikipedia.org/wiki/File:Texas_Tech_Red_Raiders_baseball_cap.jpg");
+                item.Picture = new Uri("http://upload.wikimedia.org/wikipedia/commons/2/23/Texas_Tech_Red_Raiders_baseball_cap.jpg");
             }
-            return View("ItemView", item);
+            return PartialView("ItemView", item);
         }
     }
 }
