@@ -134,3 +134,8 @@ C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe.Tes
 C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe.Tests\obj\Debug\Wardrobe.Tests.csprojResolveAssemblyReference.cache
 C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe.Tests\obj\Debug\Wardrobe.Tests.dll
 C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe.Tests\obj\Debug\Wardrobe.Tests.pdb
+C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe.Tests\bin\Debug\Gamoya.Weather.Common.dll
+C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe.Tests\bin\Debug\Gamoya.Weather.ForecastIO.dll
+C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe.Tests\bin\Debug\RestSharp.dll
+C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe.Tests\bin\Debug\RestSharp.xml
+C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe.Tests\bin\Debug\Forecast.io.45.dll

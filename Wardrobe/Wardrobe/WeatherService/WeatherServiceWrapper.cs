@@ -18,7 +18,7 @@ namespace Wardrobe.WeatherService
         /// <param name="latitude">lat</param>
         /// <param name="longitude">long</param>
         /// <returns>Weather object with condition and temperature from weather service</returns>
-        public Weather GetWeather(float latitude, float longitude)
+        public static Weather GetWeather(float latitude, float longitude)
         {
             var request = new ForecastIORequest(API_KEY, latitude, longitude, DateTime.Now, Unit.us);
             var response = request.Get();

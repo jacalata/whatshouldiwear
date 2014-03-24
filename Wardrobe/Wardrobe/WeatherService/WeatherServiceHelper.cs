@@ -8,6 +8,9 @@ namespace Wardrobe.WeatherService
 {
     public static class WeatherServiceHelper
     {
+        private const float REDMOND_LATITUDE = 47.6694f;
+        private const float REDMOND_LONGITUDE = -122.1239f;
+
         //Represents the maximum temperature for each enum value
         private const float FREEZING = 32f;
         private const float COLD = 65f;
@@ -26,11 +29,11 @@ namespace Wardrobe.WeatherService
             else return Temperature.Scorching;
         }
 
-        private static const string[] Sunny = {"clear-day", "clear-night"};
-        private static const string[] Rainy = {"rain"};
-        private static const string[] Snow = { "snow", "sleet" };
-        private static const string[] Windy = { "wind" };
-        private static const string[] Cloudy = { "fog", "cloudy", "partly-cloudy-day", "partly-cloudy-night" };
+        private static string[] Sunny = {"clear-day", "clear-night"};
+        private static string[] Rainy = { "rain" };
+        private static string[] Snow = { "snow", "sleet" };
+        private static string[] Windy = { "wind" };
+        private static string[] Cloudy = { "fog", "cloudy", "partly-cloudy-day", "partly-cloudy-night" };
 
         public static WeatherCondition GetDailyCondition(string condition)
         {

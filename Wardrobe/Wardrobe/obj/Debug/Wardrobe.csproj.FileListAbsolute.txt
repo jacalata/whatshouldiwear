@@ -138,3 +138,7 @@ C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe\bin
 C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe\obj\Debug\Wardrobe.csprojResolveAssemblyReference.cache
 C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe\obj\Debug\Wardrobe.dll
 C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe\obj\Debug\Wardrobe.pdb
+C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe\bin\Forecast.io.45.dll
+C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe\bin\Gamoya.Weather.Common.dll
+C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe\bin\RestSharp.dll
+C:\Users\maranstr.REDMOND\Documents\GitHub\whatshouldiwear\Wardrobe\Wardrobe\bin\RestSharp.xml
