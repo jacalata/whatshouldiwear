@@ -27,7 +27,7 @@ namespace Wardrobe.WeatherService
 
 
             Temperature temperature = WeatherServiceHelper.GetDailyTemperature(forecast.apparentTemperatureMin, forecast.apparentTemperatureMax);
-            WeatherCondition condition = WeatherServiceHelper.GetDailyCondition(response.daily.icon);
+            WeatherCondition condition = WeatherServiceHelper.GetDailyCondition(forecast.icon);
 
             return new Weather(condition, temperature);
         }

@@ -8,8 +8,8 @@ namespace Wardrobe.WeatherService
 {
     public static class WeatherServiceHelper
     {
-        private const float REDMOND_LATITUDE = 47.6694f;
-        private const float REDMOND_LONGITUDE = -122.1239f;
+        public const float REDMOND_LATITUDE = 47.6694f;
+        public const float REDMOND_LONGITUDE = -122.1239f;
 
         //Represents the maximum temperature for each enum value
         private const float FREEZING = 32f;
