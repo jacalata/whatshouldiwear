@@ -19,13 +19,47 @@
 
             <li class="two">
                 <h5>Ask us to choose an outfit!</h5>    
-                <button onclick="api/getOutfit">Generate outfit</button>
+                <button onclick="getOutfit">Get suggestions</button>
+                <div id="outfit-viewer" style="border:solid">
+                </div>
             </li>
             <li class="three">
-                <h5>Find Web Hosting</h5>
-                <button onclick="api/getOutfit">eh...try something else</button>
-                <button onclick="api/wear/id=1&id=2&id=3">This is perfect!</button>
+                <h5>How's that look?</h5>
+                <button onclick="getOutfit">eh...try something else</button>
+                <button onclick="wearOutfit">This is perfect!</button>
             </li>
         </ol>
     </section>
 </div>
+
+<script type="text/javascript">
+    console.log('executing');
+
+    function getOutfit() {
+        console.log('get outfit');
+        $.ajax({
+            url: '@(Url.Action("GetOutfit", "HomeController"))',
+             type: "GET",
+             cache: false,
+             async: true,
+             data: { data: 'hat' },
+             success: function (result) {
+                 $("outfit-viewer").html(result);
+             }
+         });
+    }
+
+    function wearOutfit(){
+        $.ajax({
+            url: '@(Url.Action("WearOutfit", "HomeController"))"',
+            type: "POST",
+            cache: false, 
+            async: true,
+            data : { data: "2" },
+            success: function (result) {                
+                console.log("wore this outfit today!")
+            }
+        });
+    }
+
+</script>
