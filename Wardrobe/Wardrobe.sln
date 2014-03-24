@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wardrobe", "Wardrobe\Wardrobe.csproj", "{1A2E7192-EAAD-43E2-80B7-F06947CBECF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wardrobe.Tests", "Wardrobe.Tests\Wardrobe.Tests.csproj", "{BA39BE27-06AF-4D53-B0B2-5A1A88DDCB8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A2E7192-EAAD-43E2-80B7-F06947CBECF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A2E7192-EAAD-43E2-80B7-F06947CBECF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A2E7192-EAAD-43E2-80B7-F06947CBECF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A2E7192-EAAD-43E2-80B7-F06947CBECF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA39BE27-06AF-4D53-B0B2-5A1A88DDCB8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA39BE27-06AF-4D53-B0B2-5A1A88DDCB8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA39BE27-06AF-4D53-B0B2-5A1A88DDCB8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA39BE27-06AF-4D53-B0B2-5A1A88DDCB8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
