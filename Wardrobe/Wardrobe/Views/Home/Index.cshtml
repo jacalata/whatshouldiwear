@@ -35,6 +35,8 @@
 <script type="text/javascript">
     console.log('executing');
 
+    var nNtries = 0;
+
     function getOutfit() {
         console.log('get outfit');
         $.ajax({
@@ -45,6 +47,7 @@
              data: { data: 'hat' },
              success: loadClothing
         });
+        nTries++;
     }
 
     function loadClothing(result) {
@@ -55,7 +58,7 @@
 
     function wearOutfit() {
         console.log("ok wearing it");
-        $("#wear_button").text("We're glad you liked it :)");
+        $("#wear_button").text("We're glad you liked it :) (It only took us " + nTries+ " tries");
 
         $.ajax({
             url: '@(Url.Action("WearOutfit", "HomeController"))"',

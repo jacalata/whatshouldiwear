@@ -51,22 +51,34 @@ namespace Wardrobe.Models
 
         public ClothingItem Get(ClothingType type)
         {
+                    ClothingItem item;
             switch (type)
             {
-                case ClothingType.Top:
-                    return GetClothing(1);
+                case ClothingType.Top:                   
+                    item = GetClothing(1);
+                    item.Picture = new System.Uri("http://www.downloadclipart.net/large/12218-blue-shirt-design.png");
+                    break;
                 case ClothingType.Bottom:
-                    return GetClothing(3);
+                    item = GetClothing(3);
+                    item.Picture = new System.Uri("http://doodleslide.com/clipart/jeans.jpg");
+                    break;
                 case ClothingType.Hat:
-                    return GetClothing(9);
+                    item = GetClothing(9);
+                    item.Picture = new System.Uri("http://upload.wikimedia.org/wikipedia/commons/2/23/Texas_Tech_Red_Raiders_baseball_cap.jpg");
+                    break;
                 case ClothingType.Shoes:
-                    return GetClothing(8);
+                    item = GetClothing(8);
+                    item.Picture = new System.Uri("http://images.mytheresa.com/media/catalog/product/cache/common/image/1000x1000/b9336446c29edafc3474017303b51028/P/0/P00059051-GUM-NEON-HIGH-TOP-SNEAKERS-STANDARD.jpg");
+                    break;
                 case ClothingType.Coat:
-                    return GetClothing(6);
+                    item = GetClothing(6);
+                    item.Picture = new System.Uri("http://upload.wikimedia.org/wikipedia/commons/2/2c/Fishtail_Parka.jpg");
+                    break;
                 default:
-                    return null;
-                //what.
+                    item = GetClothing(1);
+                    break;
             }
+            return item;
         }
 
     }
