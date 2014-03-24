@@ -48,6 +48,23 @@ namespace Wardrobe.Models
         {
             return clothingItemList.Values.Where(p => p.Weather.Equals(weather));
         }
+
+        public ClothingItem Get(ClothingType type)
+        {
+            switch (type)
+            {
+                case ClothingType.Top:
+                    return GetClothing(1);
+                case ClothingType.Bottom:
+                    return GetClothing(3);
+                case ClothingType.Hat:
+                    return GetClothing(9);
+                default:
+                    return null;
+                //what.
+            }
+        }
+
     }
 
 }

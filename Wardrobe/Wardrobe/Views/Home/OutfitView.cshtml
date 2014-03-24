@@ -1,1 +1,21 @@
 ﻿@model Wardrobe.Models.Outfit
+@if (Model.Hat != null)
+{
+    Html.RenderPartial("ItemView", Model.Hat);
+}
+@if (Model.Top != null)
+{
+    Html.RenderPartial("ItemView", Model.Top);
+}
+@if (Model.Bottom != null)
+{
+    Html.RenderPartial("ItemView", Model.Bottom);
+}
+@if (Model.Shoes != null)
+{
+    Html.RenderPartial("ItemView", Model.Shoes);
+}
+@if (Model.Coat != null)
+{
+    Html.RenderPartial("ItemView", Model.Coat);
+}

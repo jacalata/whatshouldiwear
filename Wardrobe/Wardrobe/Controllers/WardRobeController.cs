@@ -19,6 +19,11 @@ namespace Wardrobe.Controllers
             return wardRobe.GetClothing(id);
         }
 
+        public ClothingItem Get(Wardrobe.Models.ClothingType type)
+        {
+            return wardRobe.Get(type);
+        }
+
         // GET api/values/5
         public IEnumerable<ClothingItem> GetWardRobeByWeather(Weather weather)
         {

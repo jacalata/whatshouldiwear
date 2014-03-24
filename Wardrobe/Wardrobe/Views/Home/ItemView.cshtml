@@ -1,6 +1,6 @@
 ﻿@model Wardrobe.Models.ClothingItem
-<div class="item-view" @Model.GetType().ToString()>
+<div class="item-view" @Model.ClothingType.ToString()>
     @Html.Label(@Model.Name)
-    <img src="@Model.Picture.ToString()" alt="@Model.GetType().ToString()">
+    <img src="@Model.Picture.ToString()" alt="@Model.ClothingType.ToString()">
     <br />
 </div>
