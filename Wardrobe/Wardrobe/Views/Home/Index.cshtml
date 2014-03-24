@@ -26,7 +26,7 @@
             <li class="three">
                 <h5>How's that look?</h5>
                 <button onclick="getOutfit()">eh...try something else</button>
-                <button onclick="wearOutfit()">This is perfect!</button>
+                <button id="wear_button" onclick="wearOutfit()">This is perfect!</button>
             </li>
         </ol>
     </section>
@@ -44,7 +44,7 @@
              async: true,
              data: { data: 'hat' },
              success: loadClothing
-         });
+        });
     }
 
     function loadClothing(result) {
@@ -53,18 +53,26 @@
         console.log($("#outfit-viewer")[0]);
     }
 
-    function wearOutfit(){
+    function wearOutfit() {
+        console.log("ok wearing it");
+        $("#wear_button").text("We're glad you liked it :)");
+
         $.ajax({
             url: '@(Url.Action("WearOutfit", "HomeController"))"',
             type: "POST",
             cache: false, 
             async: true,
             data : { data: "2" },
-            success: function (result) {                
-                console.log("wore this outfit today!")
-            }
+            success: returnWearing,
+            fail: returnWearing
         });
     }
+
+    function returnWearing() {
+        alert("We're glad you liked it! We'll make a note that these clothes need washing now...");
+        console.log("wore this outfit today!")
+    }
+
 
 </script>
     }

@@ -171,7 +171,9 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\WardRobeController.cs" />
-    <Compile Include="GeoService\GeoServiceClient.cs" />
+    <Compile Include="GeoService\GeoServiceClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="GeoService\GeoServiceRequest.cs" />
     <Compile Include="GeoService\GeoServiceResponse.cs" />
     <Compile Include="GeoService\GeoServiceWrapper.cs" />

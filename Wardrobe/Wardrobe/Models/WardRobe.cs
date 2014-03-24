@@ -59,6 +59,10 @@ namespace Wardrobe.Models
                     return GetClothing(3);
                 case ClothingType.Hat:
                     return GetClothing(9);
+                case ClothingType.Shoes:
+                    return GetClothing(8);
+                case ClothingType.Coat:
+                    return GetClothing(6);
                 default:
                     return null;
                 //what.
